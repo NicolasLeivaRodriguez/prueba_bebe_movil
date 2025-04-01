@@ -68,6 +68,7 @@ margin-top: 0.625rem; /* Convertido a rem */
         margin-left: 1rem; /* Reducir los márgenes laterales */
         margin-right: 1rem; /* Reducir los márgenes laterales */
         padding: 1rem; /* Aumentar ligeramente el padding */
+        margin-top: 7rem;
         font-size: 2.5rem; /* Reducir el tamaño de fuente general del contenedor */
         min-height: auto; /* Ajustar la altura mínima automáticamente */
         box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.5); /* Reducir la sombra */
