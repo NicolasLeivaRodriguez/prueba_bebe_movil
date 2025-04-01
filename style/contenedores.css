@@ -1,0 +1,192 @@
+.ecografia,
+.historia {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem; /* Reducido y usando rem */
+    background-color: antiquewhite;
+    border-radius: 0.75rem; /* Convertido a rem */
+    padding: 1rem; /* Convertido a rem */
+    justify-content: space-around;
+    box-shadow: 0.3125rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.2); /* Convertido a rem */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.ecografia:hover,
+.historia:hover {
+    box-shadow: 0.625rem 0.625rem 0.9375rem rgba(0, 0, 0, 0.3); /* Convertido a rem */
+}
+
+.desc_eco {
+    font-size: 2rem; /* Reducido y usando rem */
+    animation: fadeIn 1s ease-out 0.3s backwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.ecografia img,
+.historia img {
+    transition: transform 0.3s ease-in-out;
+    max-width: 50%; /* Hacer las imágenes más responsivas */
+    height: auto;
+}
+
+.ecografia img:hover,
+.historia img:hover {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.titulo_secciones {
+    font-size: 3rem; /* Reducido y usando rem */
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.3); /* Convertido a rem */
+    animation: slideInRight 1s ease-out;
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(3.125rem); /* Reducido */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+section {
+    margin-top: 10rem; /* Reducido */
+}
+.progreso {
+    font-size: 1.5rem; /* Reducido y usando rem */
+  }
+  
+  #foto_semana {
+    margin: 1.875rem; /* Convertido a rem */
+    width: 5000px; /* Hacer la imagen más responsiva */
+    height: auto;
+  }
+  
+  .progress-bar-container {
+    background-color: #f7e478;
+    border-radius: 0.3rem; /* Convertido a rem */
+    margin: 3rem; /* Reducido y usando rem */
+    height: 2rem; /* Reducido y usando rem */
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    animation: slideInUp 1s ease-out;
+  }
+  
+  @keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(3.125rem); /* Reducido */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  .progress-bar {
+    background-color: #c59525;
+    height: 100%;
+    border-radius: 0.3rem; /* Convertido a rem */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    font-size: 1.5rem; /* Reducido y usando rem */
+    font-weight: bold;
+    animation: pulseText 1.5s infinite alternate;
+  }
+  
+  @keyframes pulseText {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.05);
+        opacity: 1;
+    }
+  }
+  @media (max-width: 768px) {
+    .ecografia,
+    .historia {
+        flex-direction: column; /* Apilar imagen y texto verticalmente */
+        margin: 1.5rem; /* Reducir el margen */
+        padding: 1rem; /* Mantener el padding o reducirlo ligeramente */
+        align-items: center; /* Centrar los elementos */
+        text-align: center; /* Centrar el texto */
+        justify-content: center; /* Centrar el contenido */
+    }
+
+    .ecografia img,
+    .historia img {
+        max-width: 80%; /* Hacer las imágenes ocupar más ancho en móvil */
+        margin-bottom: 1rem; /* Añadir espacio entre la imagen y el texto */
+    }
+
+    .desc_eco {
+        font-size: 1.5rem; /* Reducir el tamaño de la descripción */
+    }
+
+    .titulo_secciones {
+        font-size: 2.5rem; /* Reducir el tamaño del título de las secciones */
+    }
+
+    .progreso {
+        font-size: 1.2rem; /* Reducir el tamaño del texto de progreso */
+    }
+
+    #foto_semana {
+        margin: 1rem; /* Reducir el margen de la foto de la semana */
+        max-width: 90%; /* Hacer la foto de la semana ocupar más ancho */
+    }
+
+    .progress-bar-container {
+        margin: 1.5rem; /* Reducir el margen del contenedor de la barra de progreso */
+        height: 1.5rem; /* Reducir la altura de la barra de progreso */
+    }
+
+    .progress-text {
+        font-size: 1.2rem; /* Reducir el tamaño del texto de progreso dentro de la barra */
+    }
+}
+
+/* Media query para pantallas aún más pequeñas (ej: 480px) - Opcional */
+@media (max-width: 480px) {
+    .desc_eco {
+        font-size: 1.3rem;
+    }
+
+    .titulo_secciones {
+        font-size: 2rem;
+    }
+
+    .progreso {
+        font-size: 1rem;
+    }
+
+    .progress-bar-container {
+        margin: 1rem;
+    }
+
+    .progress-text {
+        font-size: 1rem;
+    }
+}

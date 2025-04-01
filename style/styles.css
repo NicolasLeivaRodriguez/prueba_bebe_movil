@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html {
+    font-size: 16px; /* Establecer un tamaño de fuente base para rem */
+    scroll-behavior: smooth;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: hsl(120, 26%, 75%);
+    font-size: 1rem; /* Tamaño de fuente base para el body */
+}
+
+body:hover {
+    background-color: hsl(120, 30%, 80%);
+}
+
+* {
+    font-family: "Indie Flower";
+}
+
+*:hover {
+    color: #555;
+}
+
+header {
+    font-size: 2rem; /* Reducido y usando rem */
+    font-weight: bold;
+    margin-bottom: 5rem; /* Reducido y usando rem */
+    animation: fadeInDown 1s ease-out;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-1.25rem); /* Reducido */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.votacion{
+    background: #ad9898d2;
+    width: 70%;
+    height: 1600px;
+    border-radius: 25px;
+    padding-top: 30px;
+}
+@media (max-width: 480px) {
+    html {
+        font-size: 13px;
+    }
+
+    header {
+        font-size: 1.5rem;
+    }
+
+    .votacion {
+        padding-top: 15px;
+    }
+}

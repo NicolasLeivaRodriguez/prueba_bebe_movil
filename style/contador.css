@@ -1,0 +1,85 @@
+.contador-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 5rem; /* Convertido a rem */
+    margin-right: 5rem; /* Convertido a rem */
+    padding: 0.625rem; /* Convertido a rem */
+    background-color: #ffffff8d;
+    border-radius: 0.5rem; /* Convertido a rem */
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1); /* Convertido a rem */
+    border-radius: 1.25rem; /* Convertido a rem */
+    height: auto; /* Ajustar altura al contenido */
+    min-height: 8rem; /* Altura mínima */
+    font-size: 4rem; /* Reducido y usando rem */
+    box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.5); /* Convertido a rem */
+    animation: fadeInUp 1s ease-out 0.5s backwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(1.25rem); /* Reducido */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contador-item {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.contador-item span:first-child {
+    display: block; /* Reducido y usando rem */
+    font-weight: bold;
+    color: #333;
+    animation: scaleUp 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2); /* Reducido */
+    }
+}
+
+.contador-item span:last-child {
+    color: #4d4a4a;
+    font-size: 2rem; /* Reducido y usando rem */
+    font-weight: bold;
+}
+
+#contador {
+margin-top: -10rem; /* Ajustado */
+}
+#bento {
+margin-top: 0.625rem; /* Convertido a rem */
+}
+@media (max-width: 480px) {
+    .contador-container {
+        font-size: 2rem;
+        padding: 0.75rem;
+    }
+
+    .contador-item {
+        font-size: 1.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .contador-item span:first-child {
+        font-size: 2.2rem;
+    }
+
+    .contador-item span:last-child {
+        font-size: 1.3rem;
+    }
+
+    #contador {
+        margin-top: -3rem;
+    }
+}

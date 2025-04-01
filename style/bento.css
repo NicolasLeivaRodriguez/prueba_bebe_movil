@@ -1,0 +1,193 @@
+.bento {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Volver a fracciones más estándar */
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.25rem; /* Reducido */
+    width: 90%;
+    height: 100vh; /* Hacer que la altura se ajuste al contenido */
+    max-height: 100vh; /* Opcional: limitar la altura máxima */
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3d5f4300;
+    color: white;
+    box-shadow: inset 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.5); /* Convertido a rem */
+    font-size: 4rem; /* Reducido y usando rem */
+    border-radius: 0.5rem; /* Convertido a rem */
+    position: relative;
+    overflow: hidden;
+}
+
+.item a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item .texto {
+    color: white;
+    font-weight: bold;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#historia_text,
+#ecografia_text {
+    font-size: 3rem; /* Reducido y usando rem */
+    background-color: #33333380;
+    padding: 0.75rem; /* Convertido a rem */
+    border-radius: 1.25rem; /* Convertido a rem */
+}
+
+#tienda_text {
+    background-color: #33333380;
+    padding: 0.75rem; /* Convertido a rem */
+    border-radius: 1.25rem; /* Convertido a rem */
+}
+
+.item:hover .texto {
+    opacity: 1;
+}
+
+.item-1 {
+    grid-column: span 1;
+    background-image: url(../assets/ecografia/eco1.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(1); /* Reiniciar cualquier filtro por defecto */
+}
+
+.item-1:hover {
+    filter: brightness(1.1);
+}
+
+.item-2 {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-image: url(../assets/tienda/imgtienda1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.03);
+    }
+}
+
+.item-3 {
+    grid-column: span 1;
+    background-image: url(../assets/story/foto_historia2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: slideInLeft 1s ease-out;
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-3.125rem); /* Reducido */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.item-4 {
+    grid-column: span 1;
+    background-color: rgba(133, 239, 176, 0.653);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.item-4:hover {
+    transform: scale(1.3) rotate(5deg);
+    background-color: rgba(133, 239, 176, 0.8);
+}
+
+.item-5 {
+    grid-column: span 1;
+    background-color: rgba(205, 240, 135, 0.648);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.item-5:hover {
+    transform: scale(1.3) translateY(-0.3125rem); /* Reducido */
+    box-shadow: 0.3125rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.3); /* Convertido a rem */
+}
+
+.item a {
+    width: 100%;
+}
+#bento {
+    margin-top: 0.625rem; /* Convertido a rem */
+    }
+    @media (max-width: 768px) {
+        .bento-grid {
+            grid-template-columns: 1fr; /* Una sola columna para móviles */
+            grid-template-rows: auto; /* Las filas se ajustan al contenido */
+            height: auto; /* La altura se ajusta al contenido */
+            max-height: none; /* Eliminar la restricción de altura máxima */
+            gap: 1rem; /* Reducir el espacio entre elementos en móvil */
+        }
+    
+        .item {
+            font-size: 2.5rem; /* Reducir el tamaño de la fuente en los items */
+            box-shadow: inset 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.5); /* Reducir la sombra interior */
+        }
+    
+        #historia_text,
+        #ecografia_text {
+            font-size: 2rem; /* Reducir el tamaño de la fuente en los textos */
+            padding: 0.5rem; /* Reducir el padding */
+            border-radius: 0.75rem; /* Reducir el radio del borde */
+        }
+    
+        #tienda_text {
+            padding: 0.5rem; /* Reducir el padding */
+            border-radius: 0.75rem; /* Reducir el radio del borde */
+        }
+    
+        .item-2 {
+            grid-column: span 1; /* Ocupar una sola columna */
+            grid-row: span 1; /* Ocupar una sola fila */
+        }
+    
+        /* Opcional: Puedes ajustar o desactivar animaciones que no se vean bien en móvil */
+        .item-3 {
+            animation: none; /* Desactivar la animación slideInLeft en móviles */
+        }
+    
+        .item-4:hover,
+        .item-5:hover {
+            transform: scale(1.1) rotate(0); /* Reducir la escala y quitar la rotación en hover para móvil */
+            translate: 0; /* Resetear el desplazamiento vertical */
+            box-shadow: 0.1875rem 0.1875rem 0.3125rem rgba(0, 0, 0, 0.3); /* Reducir la sombra en hover para móvil */
+        }
+    }
