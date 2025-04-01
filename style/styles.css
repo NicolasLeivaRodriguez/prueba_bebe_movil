@@ -49,6 +49,33 @@ header {
     border-radius: 25px;
     padding-top: 30px;
 }
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px; /* Reducir el tamaño de fuente base para móvil */
+    }
+
+    body {
+        font-size: 0.9rem; /* Ajustar el tamaño de fuente del body en móvil */
+    }
+
+    header {
+        font-size: 1.75rem; /* Reducir el tamaño del encabezado en móvil */
+        margin-bottom: 3rem; /* Reducir el margen inferior del encabezado en móvil */
+    }
+
+    .votacion {
+        width: 95%; /* Hacer el contenedor de votación más ancho en móvil */
+        height: auto; /* Ajustar la altura automáticamente al contenido */
+        border-radius: 15px; /* Reducir el radio del borde en móvil */
+        padding-top: 20px; /* Reducir el padding superior en móvil */
+    }
+    footer {
+        font-size: 1.2rem; /* Reducir el tamaño de la fuente en móviles */
+        margin-top: 10px; /* Reducir el margen superior en móviles */
+        padding: 0.75rem; /* Reducir ligeramente el padding en móviles */
+    }
+}
 @media (max-width: 480px) {
     html {
         font-size: 13px;
@@ -61,4 +88,15 @@ header {
     .votacion {
         padding-top: 15px;
     }
+    footer {
+        font-size: 1rem; /* Reducir aún más el tamaño de la fuente en móviles muy pequeños */
+        padding: 0.5rem; /* Reducir aún más el padding en móviles muy pequeños */
+    }
+}
+footer{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-size: 1.5rem;
+    color: rgb(33, 33, 33);
+    background-color: rgb(186, 186, 186);
 }
