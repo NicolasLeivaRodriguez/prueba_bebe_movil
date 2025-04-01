@@ -150,7 +150,7 @@
     }
     @media (max-width: 768px) {
         .bento-grid {
-            grid-template-columns: 1fr; /* Una sola columna para móviles */
+            grid-template-columns: 2fr; /* Una sola columna para móviles */
             grid-template-rows: auto; /* Las filas se ajustan al contenido */
             height: auto; /* La altura se ajusta al contenido */
             max-height: none; /* Eliminar la restricción de altura máxima */
@@ -158,6 +158,7 @@
         }
     
         .item {
+            height: 200px;
             font-size: 2.5rem; /* Reducir el tamaño de la fuente en los items */
             box-shadow: inset 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.5); /* Reducir la sombra interior */
         }
