@@ -60,10 +60,44 @@ margin-top: -10rem; /* Ajustado */
 #bento {
 margin-top: 0.625rem; /* Convertido a rem */
 }
-@media (max-width: 480px) {
+
+/* Media query para pantallas de móvil (ancho máximo de 768px) */
+@media (max-width: 768px) {
+    .contador-container {
+        flex-direction: column; /* Apilar los items verticalmente */
+        margin-left: 1rem; /* Reducir los márgenes laterales */
+        margin-right: 1rem; /* Reducir los márgenes laterales */
+        padding: 1rem; /* Aumentar ligeramente el padding */
+        margin-top: 7rem;
+        font-size: 2.5rem; /* Reducir el tamaño de fuente general del contenedor */
+        min-height: auto; /* Ajustar la altura mínima automáticamente */
+        box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.5); /* Reducir la sombra */
+    }
+
+    .contador-item {
+        font-size: 2rem; /* Reducir el tamaño de fuente de los items */
+        margin-bottom: 1rem; /* Añadir espacio entre los items apilados */
+    }
+
+    .contador-item span:first-child {
+        font-size: 2.5rem; /* Reducir el tamaño del número */
+    }
+
+    .contador-item span:last-child {
+        font-size: 1.5rem; /* Reducir el tamaño del texto descriptivo */
+    }
+
+    #contador {
+        margin-top: -5rem; /* Ajustar el margen superior para móvil */
+    }
+}
+
+ 
+ @media (max-width: 480px) {
     .contador-container {
         font-size: 2rem;
         padding: 0.75rem;
+        margin-top: 7rem;
     }
 
     .contador-item {
@@ -82,4 +116,4 @@ margin-top: 0.625rem; /* Convertido a rem */
     #contador {
         margin-top: -3rem;
     }
-}
+} 
