@@ -66,6 +66,7 @@ header {
 
     .votacion {
         width: 95%; /* Hacer el contenedor de votación más ancho en móvil */
+        height: 700px;
         height: auto; /* Ajustar la altura automáticamente al contenido */
         border-radius: 15px; /* Reducir el radio del borde en móvil */
         padding-top: 20px; /* Reducir el padding superior en móvil */
