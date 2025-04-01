@@ -66,8 +66,7 @@ header {
 
     .votacion {
         width: 95%; /* Hacer el contenedor de votación más ancho en móvil */
-        height: 700px;
-        height: auto; /* Ajustar la altura automáticamente al contenido */
+        height: 700px; 
         border-radius: 15px; /* Reducir el radio del borde en móvil */
         padding-top: 20px; /* Reducir el padding superior en móvil */
     }
@@ -80,6 +79,7 @@ header {
 @media (max-width: 480px) {
     html {
         font-size: 13px;
+        
     }
 
     header {
@@ -88,6 +88,7 @@ header {
 
     .votacion {
         padding-top: 15px;
+        height: 700px;
     }
     footer {
         font-size: 1rem; /* Reducir aún más el tamaño de la fuente en móviles muy pequeños */
