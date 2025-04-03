@@ -84,7 +84,7 @@
 .item-2 {
     grid-column: span 2;
     grid-row: span 2;
-    background-image: url(../assets/tienda/imgtienda1.png);
+    background-image: url(../assets/tienda/imgtienda1.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
