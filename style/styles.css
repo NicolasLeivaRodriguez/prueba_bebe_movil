@@ -48,6 +48,9 @@ header {
     height: 1600px;
     border-radius: 25px;
     padding-top: 30px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), /* Sombra interior */
+                1px 1px 2px rgba(0, 0, 0, 0.1);
+    
 }
 
 @media (max-width: 768px) {
@@ -66,7 +69,7 @@ header {
 
     .votacion {
         width: 95%; /* Hacer el contenedor de votación más ancho en móvil */
-        height: 700px; 
+        height: 700px; /* Ajustar la altura automáticamente al contenido */
         border-radius: 15px; /* Reducir el radio del borde en móvil */
         padding-top: 20px; /* Reducir el padding superior en móvil */
     }
@@ -79,7 +82,6 @@ header {
 @media (max-width: 480px) {
     html {
         font-size: 13px;
-        
     }
 
     header {
@@ -88,7 +90,6 @@ header {
 
     .votacion {
         padding-top: 15px;
-        height: 700px;
     }
     footer {
         font-size: 1rem; /* Reducir aún más el tamaño de la fuente en móviles muy pequeños */
@@ -101,4 +102,26 @@ footer{
     font-size: 1.5rem;
     color: rgb(33, 33, 33);
     background-color: rgb(186, 186, 186);
+}
+.boton_tienda button{
+    background-color: rgba(205, 247, 153, 0.705);
+    width: fit-content;
+    height:fit-content ;
+    border-radius: 25px;
+    border: 0px solid ;
+    display: inline-block;
+    padding: 3rem;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), /* Sombra interior */
+              1px 1px 2px rgba(0, 0, 0, 0.1);
+    
+}
+.boton_tienda a{
+    all: unset;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+.boton_tienda button:hover{
+    
+    box-shadow: inset 4px 4px 7px rgba(0, 0, 0, 0.2);
 }
