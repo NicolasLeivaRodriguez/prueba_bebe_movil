@@ -24,61 +24,6 @@ body:hover {
 *:hover {
     color: #555;
 }
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-html {
-    font-size: 16px; /* Establecer un tamaño de fuente base para rem */
-    scroll-behavior: smooth;
-}
-
-body {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: hsl(120, 26%, 75%);
-    font-size: 1rem; /* Tamaño de fuente base para el body */
-}
-
-body:hover {
-    background-color: hsl(120, 30%, 80%);
-}
-
-* {
-    font-family: "Indie Flower";
-}
-
-*:hover {
-    color: #555;
-}
-footer{
-    margin-top: 15px;
-    margin-bottom: 0px;
-    font-size: 1.5rem;
-    color: rgb(33, 33, 33);
-    background-color: rgb(186, 186, 186);
-}
-.boton_tienda button{
-    background-color: rgba(205, 247, 153, 0.705);
-    width: fit-content;
-    height:fit-content ;
-    border-radius: 25px;
-    border: 0px solid ;
-    display: inline-block;
-    padding: 3rem;
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), /* Sombra interior */
-              1px 1px 2px rgba(0, 0, 0, 0.1);
-    
-}
-.boton_tienda a{
-    all: unset;
-    font-size: 3rem;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-}
-.boton_tienda button:hover{
-    
-    box-shadow: inset 4px 4px 7px rgba(0, 0, 0, 0.2);
-}
 
 header {
     font-size: 2rem; /* Reducido y usando rem */
@@ -158,7 +103,7 @@ footer{
     color: rgb(33, 33, 33);
     background-color: rgb(186, 186, 186);
 }
-.boton_tienda button{
+.boton_tienda{
     background-color: rgba(205, 247, 153, 0.705);
     width: fit-content;
     height:fit-content ;
@@ -168,6 +113,7 @@ footer{
     padding: 3rem;
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), /* Sombra interior */
               1px 1px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
     
 }
 .boton_tienda a{
@@ -175,79 +121,5 @@ footer{
     font-size: 3rem;
     font-weight: bold;
     color: rgb(0, 0, 0);
-}
-.boton_tienda button:hover{
     
-    box-shadow: inset 4px 4px 7px rgba(0, 0, 0, 0.2);
-}
-header {
-    font-size: 2rem; /* Reducido y usando rem */
-    font-weight: bold;
-    margin-bottom: 5rem; /* Reducido y usando rem */
-    animation: fadeInDown 1s ease-out;
-}
-
-@keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-1.25rem); /* Reducido */
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-.votacion{
-    background: #ad9898d2;
-    width: 70%;
-    height: 1600px;
-    border-radius: 25px;
-    padding-top: 30px;
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), /* Sombra interior */
-                1px 1px 2px rgba(0, 0, 0, 0.1);
-    
-}
-
-@media (max-width: 768px) {
-    html {
-        font-size: 14px; /* Reducir el tamaño de fuente base para móvil */
-    }
-
-    body {
-        font-size: 0.9rem; /* Ajustar el tamaño de fuente del body en móvil */
-    }
-
-    header {
-        font-size: 1.75rem; /* Reducir el tamaño del encabezado en móvil */
-        margin-bottom: 3rem; /* Reducir el margen inferior del encabezado en móvil */
-    }
-
-    .votacion {
-        width: 95%; /* Hacer el contenedor de votación más ancho en móvil */
-        height: 700px; /* Ajustar la altura automáticamente al contenido */
-        border-radius: 15px; /* Reducir el radio del borde en móvil */
-        padding-top: 20px; /* Reducir el padding superior en móvil */
-    }
-    footer {
-        font-size: 1.2rem; /* Reducir el tamaño de la fuente en móviles */
-        margin-top: 10px; /* Reducir el margen superior en móviles */
-        padding: 0.75rem; /* Reducir ligeramente el padding en móviles */
-    }
-}
-@media (max-width: 480px) {
-    html {
-        font-size: 13px;
-    }
-
-    header {
-        font-size: 1.5rem;
-    }
-
-    .votacion {
-        padding-top: 15px;
-    }
-    footer {
-        font-size: 1rem; /* Reducir aún más el tamaño de la fuente en móviles muy pequeños */
-        padding: 0.5rem; /* Reducir aún más el padding en móviles muy pequeños */
-    }
 }
