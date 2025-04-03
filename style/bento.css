@@ -61,11 +61,6 @@
     padding: 0.75rem; /* Convertido a rem */
     border-radius: 1.25rem; /* Convertido a rem */
 }
-
-.item:hover .texto {
-    opacity: 1;
-}
-
 .item-1 {
     grid-column: span 1;
     background-image: url(../assets/ecografia/eco1.jpg);
