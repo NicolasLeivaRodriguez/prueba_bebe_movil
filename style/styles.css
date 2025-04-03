@@ -120,6 +120,7 @@ footer{
     font-size: 3rem;
     font-weight: bold;
     color: rgb(0, 0, 0);
+    cursor: pointer;
 }
 .boton_tienda:hover{
     
