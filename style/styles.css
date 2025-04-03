@@ -113,6 +113,7 @@ footer{
     padding: 3rem;
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), /* Sombra interior */
               1px 1px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
     
 }
 .boton_tienda a{
@@ -120,7 +121,7 @@ footer{
     font-size: 3rem;
     font-weight: bold;
     color: rgb(0, 0, 0);
-    cursor: auto;
+    
 }
 .boton_tienda:hover{
     
