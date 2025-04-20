@@ -89,13 +89,19 @@ header p {
     width: 100%;
     margin-bottom: 15px;
     border-radius: 5px;
-    overflow: hidden; /* Para que la imagen no se salga del borde */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+     /* Para que la imagen no se salga del borde */
 }
 
 .product-image img {
     width: 100%;
     display: block; /* Evita espacio extra debajo de la imagen */
     transition: transform 0.3s ease-in-out;
+    object-fit: fill;
+    border-radius: 5px;
+    
 }
 
 .product-item:hover .product-image img {
