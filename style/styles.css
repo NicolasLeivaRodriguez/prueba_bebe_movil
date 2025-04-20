@@ -55,16 +55,16 @@ header {
 
 @media (max-width: 768px) {
     html {
-        font-size: 14px; /* Reducir el tamaño de fuente base para móvil */
+        font-size: 16px; /* Reducir el tamaño de fuente base para móvil */
     }
 
     body {
-        font-size: 0.9rem; /* Ajustar el tamaño de fuente del body en móvil */
+        font-size: 1.75rem; /* Ajustar el tamaño de fuente del body en móvil */
     }
 
     header {
-        font-size: 1.75rem; /* Reducir el tamaño del encabezado en móvil */
-        margin-bottom: 3rem; /* Reducir el margen inferior del encabezado en móvil */
+        font-size: 2rem; /* Reducir el tamaño del encabezado en móvil */
+        margin-bottom: 5rem; /* Reducir el margen inferior del encabezado en móvil */
     }
 
     .votacion {
@@ -81,25 +81,25 @@ header {
 }
 @media (max-width: 480px) {
     html {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     header {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .votacion {
         padding-top: 15px;
     }
     footer {
-        font-size: 1rem; /* Reducir aún más el tamaño de la fuente en móviles muy pequeños */
+        font-size: 1.75rem; /* Reducir aún más el tamaño de la fuente en móviles muy pequeños */
         padding: 0.5rem; /* Reducir aún más el padding en móviles muy pequeños */
     }
 }
 footer{
     margin-top: 15px;
     margin-bottom: 0px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: rgb(33, 33, 33);
     background-color: rgb(186, 186, 186);
 }
