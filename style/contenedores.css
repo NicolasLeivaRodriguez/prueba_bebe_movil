@@ -12,6 +12,9 @@
     box-shadow: 0.3125rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.2); /* Convertido a rem */
     transition: box-shadow 0.3s ease-in-out;
 }
+.ecografia{
+    flex-direction: column;
+}
 
 .ecografia:hover,
 .historia:hover {
@@ -70,7 +73,7 @@ section {
   
   #foto_semana {
     margin: 1.875rem; /* Convertido a rem */
-    width: 5000px; /* Hacer la imagen más responsiva */
+    width: 800px; /* Hacer la imagen más responsiva */
     height: auto;
   }
   
@@ -220,6 +223,7 @@ section {
     margin: auto;
     overflow: hidden;
     display: flex;
+    margin: 35px;
   }
   
   .carousel-image {
