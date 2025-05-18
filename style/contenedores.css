@@ -14,6 +14,9 @@
 }
 .ecografia{
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 3rem; /* Reducido y usando rem */
 }
 
 .ecografia:hover,
@@ -136,10 +139,12 @@ section {
         align-items: center; /* Centrar los elementos */
         text-align: center; /* Centrar el texto */
         justify-content: center; /* Centrar el contenido */
+        box-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.2); /* Reducido */
     }
 
     .ecografia img,
     .historia img {
+        width: 100%; /* Hacer las imágenes ocupar todo el ancho disponible */
         max-width: 80%; /* Hacer las imágenes ocupar más ancho en móvil */
         margin-bottom: 1rem; /* Añadir espacio entre la imagen y el texto */
     }
@@ -206,6 +211,7 @@ section {
     }
     .carousel {
         max-width: 100%;
+        text-align: center;
       }
       .carousel-image {
         height: 160px;
@@ -224,6 +230,10 @@ section {
     overflow: hidden;
     display: flex;
     margin: 35px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
   }
   
   .carousel-image {
@@ -232,8 +242,12 @@ section {
     height: 400px;
     object-fit: cover;
     flex: 0 0 100%;
-    margin-left: 25%;
+    margin-left: 10.5%;
     border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+    transform: scale(1);
+    
   }
   
   .carousel-image.active {
@@ -246,7 +260,11 @@ section {
   }
   
   .carousel-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
+    flex-direction: column;
     top: 50%;
     transform: translateY(-50%);
     background: rgba(0,0,0,0.5);
