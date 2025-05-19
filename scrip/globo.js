@@ -41,3 +41,4 @@ function explotarGlobo(e) {
 // Soporte para click y touch
 globo.addEventListener('click', explotarGlobo);
 globo.addEventListener('touchstart', explotarGlobo);
+
