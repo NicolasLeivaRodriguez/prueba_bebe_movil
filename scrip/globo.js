@@ -2,12 +2,9 @@ const globo = document.getElementById('globo');
 const nombre = document.getElementById('nombreAleix');
 
 // Función para explotar el globo
-function explotarGlobo(e) {
-  e.preventDefault(); // evita que se dispare click y touchstart juntos en móviles
-
-  // Evita que se dispare dos veces
-  globo.removeEventListener('click', explotarGlobo);
-  globo.removeEventListener('touchstart', explotarGlobo);
+function explotarGlobo() {
+  // Evita múltiples explosiones
+  if (globo.style.display === 'none') return;
 
   const rect = globo.getBoundingClientRect();
   const container = globo.parentElement;
@@ -16,7 +13,6 @@ function explotarGlobo(e) {
     const p = document.createElement('div');
     p.className = 'particle';
 
-    // Ángulo y distancia aleatoria
     const angle = Math.random() * 2 * Math.PI;
     const distance = 80 + Math.random() * 60;
     const dx = Math.cos(angle) * distance;
@@ -38,6 +34,7 @@ function explotarGlobo(e) {
   }, 400);
 }
 
-// Soporte para click y touch
-globo.addEventListener('click', explotarGlobo);
-globo.addEventListener('touchstart', explotarGlobo);
+// Hacer que explote automáticamente después de 2 segundos
+window.addEventListener('DOMContentLoaded', () => {
+  setTimeout(explotarGlobo, 2000);
+});
